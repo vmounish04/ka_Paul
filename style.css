@@ -1,0 +1,153 @@
+/* 
+=> Media Queries Screen Size
+
+-- XS Screen width -> Less than 370px
+-- Mobile Screen width -> 370px to 576px
+-- Tap Screen width -> 662px to 767px
+-- Laptop Screen width -> 767px to 1200px
+-- Tv Screen width -> more than 1200px
+
+
+=> Main Things to Focus
+
+1)Width -> width:auto;
+2)Margin 
+3)Padding 
+4)flex -> flex-wrap:wrap;
+5)colors,hights
+
+=> Display
+
+display : none;   -> It removes the element
+display : block;   -> It shows the element
+flex-wrap : wrap-reverse; -> anti clock wise
+
+
+*/
+
+ body
+ {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+
+ }
+ .news
+ {
+    background-color:wheat;
+ }
+ .news>.paul
+ {
+    display: none;
+ }
+ .news>h1,p
+ {
+    margin: 0;
+    padding: 30px;
+ }
+ .news>img
+ {
+    object-fit: cover;
+    width:100%;
+    height:800px ;
+ }
+ .news>a>button
+ {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    font-size: 25px;
+    border:none;
+    border-radius: 10px;
+ }
+ .images
+ {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width:100%;
+    padding-bottom: 40px;
+ }
+ .images>img
+ {
+    margin-top:40px ;
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+
+ }
+
+ /* tab size */
+ @media(max-width:767px)
+ {
+    .news
+    {
+        background-color: rgb(255, 254, 254);
+        width: auto;
+        padding:20px;
+        
+    }
+    .news>img
+    {
+     object-fit: cover;
+     height:450px ;
+     width: 100%;
+    }
+    .news>a>button
+   {
+      background-color: rgb(13, 246, 95);
+      color:rgb(255, 255, 255);
+      font-size: 20px;
+   }
+
+
+ }
+
+ /* mobile */
+ @media(max-width:576px) {
+    .news
+    {
+        background-color: white;
+        width: auto;
+        padding: 10px;
+    }
+    .news>img
+   {
+    object-fit: cover;
+    height:300px ;
+    width: 100%;
+   }
+   .news>p
+   {
+    padding: 25px;
+   }
+   .news>a>button
+   {
+      background-color: rgb(0, 0, 0);
+      color:rgb(255, 255, 255);
+      font-size: 20px;
+   }
+   .images>img
+   {
+    width: 350px;
+    margin-top: 30px;
+   }
+   .news>h1
+   {
+      display:none;
+    
+    }
+   .news>.paul
+   {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+   }
+
+    
+ }
+
+
+
+
