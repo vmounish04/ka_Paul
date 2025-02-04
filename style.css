@@ -115,7 +115,7 @@ flex-wrap : wrap-reverse; -> anti clock wise
     .news>img
    {
     object-fit: cover;
-    height:300px ;
+    height:3git00px ;
     width: 100%;
    }
    .news>p
@@ -130,7 +130,7 @@ flex-wrap : wrap-reverse; -> anti clock wise
    }
    .images>img
    {
-    width: 350px;
+    width: 300px;
     margin-top: 30px;
    }
    .news>h1
